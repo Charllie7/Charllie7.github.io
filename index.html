@@ -1,7 +1,552 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Desanímada Store</h1>
-<p>CONTRUÇÃO :P</p>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DiscordStore - Discord Developer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Discord Store</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#planos">PLANOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#servicos">SERVIÇOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#hospedagem">HOSPEDAGEM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#discord">DISCORD</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Olá usuário, veja qual plano <br>melhor serve para você.</div>
+        <div class="intro-heading text-uppercase">PROMOÇÕES IMPERDIVEIS</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#planos">Saiba Mais...</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Planos -->
+  <section id="planos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">PLANOS</h2>
+          <h3 class="section-subheading text-muted">Nossa loja oferece à você alguns dos nossos melhores planos.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Plano Básico</h4>
+          <p class="text-muted">Um serviço mais em conta, com o total de 25 comandos selecionados por você!</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Plano Premium</h4>
+          <p class="text-muted">Um serviço para você que deseja um preço acessível e com o total de 45 comandos selecionados por você!</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Plano Avançado</h4>
+          <p class="text-muted">Produto perfeito para você, tendo um total de 65 incríveis comandos selecionados por você!</p>
+        </div>
+  </section>
+
+  <!-- Informações -->
+  <section class="bg-light" id="servicos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">INFORMAÇÕES</h2>
+          <h3 class="section-subheading text-muted">Veja todas as informações dos nossos Planos.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/bot.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Plano Básico</h4>
+            <p class="text-muted">Um bot Básico para discord</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/bot.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Plano Premium</h4>
+            <p class="text-muted">Um bot Premium para discord</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/bot.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Plano Avançado</h4>
+            <p class="text-muted">Um bot Avançado para discord</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/bot.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Plano Especial</h4>
+            <p class="text-muted">Um pacote Especial para discord</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/bot.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Discord Básico</h4>
+            <p class="text-muted">Um Discord Server básico</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/bot.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Discord Avançado</h4>
+            <p class="text-muted">Um Discord Server avançado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hospedagem -->
+  <section id="hospedagem">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">HOSPEDAGEM</h2>
+          <h3 class="section-subheading text-muted">Veja aqui nossos planos de Hospedagem</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/server.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading">Plano Básico</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Esse plano conta com uma hospedagem para bot em JSC, contendo: 512 MB de memória RAM, com hospedagem internacional, no valor de R$ 1,99 mensal.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/server2.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading">Plano Acessível</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Esse plano conta com uma hospedagem para bot em JSC, contendo: 2 GB de memória RAM, com hospedagem internacional, no valor de R$ 3,99 mensal.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/server3.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading">Plano Equilibrado</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Esse plano conta com uma hospedagem para bot em JSC, contendo: 4 GB de memória RAM, com hospedagem internacional, no valor de R$ 6,99 mensal.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/server4.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Plano Avançado</h4>
+                  <h4 class="subheading"></h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Esse plano conta com uma hospedagem para bot em JSC, contendo: 6 GB de memória RAM, com hospedagem internacional, no valor de R$ 13,99 mensal.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/server5.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading">Plano Premium</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Esse plano conta com uma hospedagem para bot em JSC, contendo: 12 GB de memória RAM, com hospedagem internacional, no valor de R$ 22,99 mensal.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Melhores
+                  <br>Preços
+                  <br>HaskHosting!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discord -->
+  <section class="bg-light" id="discord">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">DISCORD</h2>
+          <h3 class="section-subheading text-muted">Clique <a href="https://discord.gg/gbAWbEwuTb">AQUI</a> para acessar nosso discord e obter mais informações e suporte amplamente qualificado.</h3>
+        </div>
+      </div>
+
+
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; DiscordStore - 2021</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">INÍCIO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">PLANO BÁSICO</h2>
+                <p class="item-intro text-muted">Informações do Plano:</p>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/basicopaper.png" alt=""> -->
+                <p>Você poderá escolher qualquer comando presente na lista de comandos permitidos, para ver essa lista basta acessar nosso <a href="https://discord.gg/gbAWbEwuTb">Discord</a>.</p>
+                <ul class="list-inline">
+                  <li>Categoria: Bot Básico</li>
+                  <li>Esse plano conta com 25 comandos</li>
+                  <li>De <s>R$17,99</s> por apenas R$14,76 <br>(<u>18% OFF</u>)</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+               Fechar Projeto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">PLANO PREMIUM</h2>
+                <p class="item-intro text-muted">Informações do Plano:</p>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/premiumpaper.jpg" alt=""> -->
+                <p>Você poderá escolher qualquer comando presente na lista de comandos permitidos, para ver essa lista basta acessar nosso <a href="https://discord.gg/gbAWbEwuTb">Discord</a>.</p>
+                <ul class="list-inline">
+                  <li>Categoria: Bot Premium</li>
+                  <li>Esse plano conta com 45 comandos</li>
+                  <li>De <s>R$22,99</s> por apenas R$19,55 <br>(<u>15% OFF</u>)</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Fechar Projeto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">PLANO AVANÇADO</h2>
+                <p class="item-intro text-muted">Informações do Plano:</p>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/avancadopaper.jfif" alt=""> -->
+                <p>Você poderá escolher qualquer comando presente na lista de comandos permitidos, para ver essa lista basta acessar nosso <a href="https://discord.gg/gbAWbEwuTb">Discord</a>.</p>
+                <ul class="list-inline">
+                  <li>Categoria: Bot Avançado</li>
+                  <li>Esse plano conta com 65 comandos</li>
+                  <li>De <s>R$27,99</s> por apenas R$25,20 <br>(<u>10% OFF</u>)</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Fechar Projeto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">PLANO ESPECIAL</h2>
+                <p class="item-intro text-muted">Informações do Plano:</p>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/especialpaper.jpg" alt=""> -->
+                <p>Você poderá escolher qualquer comando presente na lista de comandos permitidos, para ver essa lista basta acessar nosso <a href="https://discord.gg/gbAWbEwuTb">Discord</a>.</p>
+                <ul class="list-inline">
+                  <li>Categoria: Bot Especial</li>
+                  <li>Esse plano conta com 70 comandos, e um discord 100% configurado</li>
+                  <li>De <s>R$32,99</s> por apenas R$31,35 <br>(<u>5% OFF</u>)</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Fechar Projeto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">DISCORD BÁSICO</h2>
+                <p class="item-intro text-muted">Informações do Plano:</p>
+               <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.png" alt=""> -->
+                <p>Comprando esse plano você receberá um discord básico 100% configurado, para mais informações acesse nosso <a href="https://discord.gg/gbAWbEwuTb">Discord</a>.</p>
+                <ul class="list-inline">
+                  <li>Categoria: Discord Básico</li>
+                  <li>Esse plano conta com um discord básico 100% configurado</li>
+                  <li>De <s>R$9,99</s> por apenas R$8,00 <br>(<u>20% OFF</u>)</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+            Fechar Projeto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">DISCORD AVANÇADO</h2>
+                <p class="item-intro text-muted">Informações do Plano:</p>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt=""> -->
+                <p>Comprando esse plano você receberá um discord avançado 100% configurado, para mais informações acesse nosso <a href="https://discord.gg/gbAWbEwuTb">Discord</a>.</p>
+                <ul class="list-inline">
+                  <li>Categoria: Discord Avançado</li>
+                  <li>Esse plano conta com um discord avançado 100% configurado</li>
+                  <li>De <s>R$19,99</s> por apenas R$14,00 <br>(<u>30% OFF</u>)</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Fechar Projeto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
 </body>
+
 </html>
