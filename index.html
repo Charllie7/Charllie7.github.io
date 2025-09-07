@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrakoWare - Loja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        .theme-transition * {
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+    </style>
+</head>
+<body class="theme-transition bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+    <header class="fixed w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fab fa-discord text-3xl text-indigo-600 mr-2"></i>
+                <a href="#" class="text-2xl font-bold text-white-800">Drako<span class="text-indigo-600">Ware</span></a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Ínicio</a>
+                <a href="#features" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Recursos</a>
+                <a href="#pricing" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Preços</a>
+                <a href="https://discord.gg/gbAWbEwuTb" target="_blank" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Discord</a>
+                <a href="#faq" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">FAQ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <span class="mr-2"><i data-feather="sun" class="w-5 h-5 text-yellow-500"></i></span>
+                    <div class="relative inline-block w-12 h-6">
+                        <input type="checkbox" id="theme-toggle" class="sr-only">
+                        <label for="theme-toggle" class="block w-12 h-6 rounded-full bg-gray-300 dark:bg-gray-700 cursor-pointer transition-colors"></label>
+                        <div class="absolute left-1 top-1 w-4 h-4 rounded-full bg-white dark:bg-gray-300 transition-transform duration-300" id="theme-toggle-ball"></div>
+                    </div>
+                    <span class="ml-2"><i data-feather="moon" class="w-5 h-5 text-indigo-500"></i></span>
+                </div>
+                <a href="https://discord.gg/gbAWbEwuTb" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors">Suporte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-20 px-6">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up">Potencialize seu Discord</h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Bots inteligentes para moderacão, automação e entretenimento.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#pricing" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                        Ver Planos
+                    </a>
+                    <a href="#features" class="border-2 border-purple-600 text-purple-600 dark:border-purple-400 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:bg-purple-400 px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Recursos Exclusivos</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-14 h-14 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-6">
+                            <i data-feather="shield" class="w-8 h-8 text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Moderação Avançada</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Sistema automático de moderação com logs detalhados e proteção contra spam.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-14 h-14 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-6">
+                            <i data-feather="power" class="w-8 h-8 text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Automação Inteligente</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Automatize as boas-vindas, cargos automáticos e muito mais.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-14 h-14 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-6">
+                            <i data-feather="zap" class="w-8 h-8 text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Sistema de Games</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Jogos interativos e sistema de economia para entreter sua comunidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section id="pricing" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Planos e Preços</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Cartão Básico -->
+            <div class="bg-white dark:bg-gray-700 p-8 rounded-xl border-2 border-gray-200 dark:border-gray-600 shadow-lg transform scale-105 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-semibold mb-4">Básico</h3>
+                <div class="text-4xl font-bold text-bold-600 mb-2">R$ 29,90<span class="text-lg font-normal text-bold-500">/mês</span></div>
+                <br>
+                <p class="text-sm text-bold-500">ou R$ 299,90/ano (16% off)</p>
+                <br>
+                
+                <!-- Linha de Separação -->
+                <hr class="my-4 border-gray-300 dark:border-gray-600">
+                
+                <ul class="space-y-3 mb-8 flex-grow">
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Moderação básica</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> 5 comandos customizados</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Sistema de tickets completo</li>
+                    <li class="flex items-center"><i data-feather="x" class="w-5 h-5 text-red-500 mr-2"></i> Sistema de economia</li>
+                    <li class="flex items-center"><i data-feather="x" class="w-5 h-5 text-red-500 mr-2"></i> Sistema de minijogos</li>
+                    <li class="flex items-center"><i data-feather="x" class="w-5 h-5 text-red-500 mr-2"></i> Personalização total</li>
+                    <li class="flex items-center"><i data-feather="x" class="w-5 h-5 text-red-500 mr-2"></i> Sistema de registros com DB</li>
+                </ul>
+                
+                <!-- Espaço entre os checks e os badges -->
+                <div class="mt-4"></div>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Básico</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Suporte</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Moderação</span>
+                </div>
+                <a href="https://discord.com/invite/gbAWbEwuTb" target="_blank">
+                <button class="w-full bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200 py-3 rounded-lg font-semibold h-16 hover:bg-gray-700 hover:text-white white dark:hover:bg-gray-500 hover:text-white">Contratar</button>
+                </a>
+            </div>
+
+            <!-- Cartão Premium -->
+            <div class="relative bg-white dark:bg-gray-700 p-8 rounded-xl border-2 border-purple-600 dark:border-purple-400 shadow-lg transform scale-105 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                    Popular
+                </div>
+                <h3 class="text-center text-2xl font-semibold mb-4">Premium</h3>
+                <div class="text-center text-4xl font-bold text-bold-600 mb-2">R$ 49,90<span class="text-lg font-normal text-bold-500">/mês</span></div>
+                <br>
+                <p class="text-center text-sm text-bold-500">ou R$ 499,90/ano (16% off)</p>
+                <br>
+                
+                <!-- Linha de Separação -->
+                <hr class="my-4 border-gray-300 dark:border-gray-600">
+                
+                <ul class="space-y-3 mb-8 flex-grow">
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Moderação avançada</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> 10 comandos customizados</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Sistema de tickets completo</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Sistema de economia</li>
+                    <li class="flex items-center"><i data-feather="x" class="w-5 h-5 text-red-500 mr-2"></i> Sistema de minijogos</li>
+                    <li class="flex items-center"><i data-feather="x" class="w-5 h-5 text-red-500 mr-2"></i> Personalização total</li>
+                    <li class="flex items-center"><i data-feather="x" class="w-5 h-5 text-red-500 mr-2"></i> Sistema de registros com DB</li>
+                </ul>
+                
+                <!-- Espaço entre os checks e os badges -->
+                <div class="mt-4"></div>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Premium</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Minijogos</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Flexível</span>
+                </div>
+                <a href="https://discord.com/invite/gbAWbEwuTb" target="_blank">
+                <button class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold h-16 transition-colors">Contratar</button>
+                </a>
+            </div>
+
+            <!-- Cartão Enterprise -->
+            <div class="bg-white dark:bg-gray-700 p-8 rounded-xl border-2 border-gray-200 dark:border-gray-600 shadow-lg transform scale-105 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-center text-2xl font-semibold mb-4">Enterprise</h3>
+                <div class="text-center text-4xl font-bold text-bold-600 mb-2">R$ 79,90<span class="text-lg font-normal text-bold-500">/mês</span></div>
+                <br>
+                <p class="text-center text-sm text-bold-500">ou R$ 799,90/ano (16% off)</p>
+                <br>
+                
+                <!-- Linha de Separação -->
+                <hr class="my-4 border-gray-300 dark:border-gray-600">
+                
+                <ul class="space-y-3 mb-8 flex-grow">
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Moderação avançada</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> 20 comandos customizados</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Sistema de tickets completo</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Sistema de economia</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Sistema de minijogos</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Personalização total</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-5 h-5 text-green-500 mr-2"></i> Sistema de registros com DB</li>
+                </ul>
+                
+                <!-- Espaço entre os checks e os badges -->
+                <div class="mt-4"></div>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Enterprise</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Economia</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Ranks</span>
+                </div>
+                <a href="https://discord.com/invite/gbAWbEwuTb" target="_blank">
+                <button class="w-full bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200 py-3 rounded-lg font-semibold h-16 hover:bg-gray-700 hover:text-white white dark:hover:bg-gray-500 hover:text-white">Contratar</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="faq" class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Perguntas Frequentes</h2>
+                <div class="space-y-6">
+                    <!-- Primeira pergunta -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-bold-800">Os bots têm recursos de música?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-300">Não, todos os nossos bots são focados em moderação, automação e entretenimento (jogos, economia), sem funcionalidades de música.</p>
+                        </div>
+                    </div>
+
+                    <!-- Segunda pergunta -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-bold-800">Quando vou receber o produto que comprei?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-300">Após a confirmação do pagamento, começaremos a preparar o seu pedido imediatamente, nosso prazo máximo é de 2 (dois) dias úteis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Terceira pergunta -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-bold-800">Qual é o tempo de uptime?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-300">Garantimos 99.9% de uptime com servidores redundantes e monitoramento 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-2xl font-bold text-white-800">Drako<span class="text-indigo-600">Ware</span></a>
+                    <p class="mt-4">Bots de Discord premium para sua comunidade.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Produtos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#pricing" class="hover:text-purple-400 transition-colors">Bots de Moderação</a></li>
+                        <li><a href="#pricing" class="hover:text-purple-400 transition-colors">Bots de Entretenimento</a></li>
+                        <li><a href="#pricing" class="hover:text-purple-400 transition-colors">Bots de Utilidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Suporte</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Documentação</a></li>
+                        <li><a href="https://discord.gg/gbAWbEwuTb" target="_blank" class="hover:text-purple-400 transition-colors">Discord</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>DrakoWare&copy;2020 - 2025 . Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle de tema
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeBall = document.getElementById('theme-toggle-ball');
+        
+        // Verificar preferência salva ou do sistema
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggle.checked = true;
+            themeBall.style.transform = 'translateX(150%)';
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggle.checked = false;
+            themeBall.style.transform = 'translateX(0)';
+        }
+
+        themeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+                themeBall.style.transform = 'translateX(150%)';
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+                themeBall.style.transform = 'translateX(0)';
+            }
+        });
+
+        // Inicializar animações
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Inicializar feather icons
+        feather.replace();
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const content = button.nextElementSibling;
+                        const icon = button.querySelector('i');
+                        
+                        content.classList.toggle('hidden');
+                        icon.classList.toggle('transform');
+                        icon.classList.toggle('rotate-180');
+                    });
+        });
+    </script>
+    <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Feito com muito ❤️  por DrakoWare</p></body>
+</body>
+</html>
